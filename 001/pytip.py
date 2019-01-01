@@ -56,3 +56,4 @@ if __name__ == "__main__":
         for num, tip in enumerate(tips, 1):
             pub = tip.published if bool(tip.published) else 'not yet'
             print(fmt.format(num, tip.name, tip.time, tip.code, pub))
+print("+++")
