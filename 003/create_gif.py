@@ -33,6 +33,7 @@ if __name__ == "__main__":
         filenames = args
 
     if not all(f.lower().endswith(VALID_EXTENSIONS) for f in filenames):
+        print(filenames)
         print('Only png and jpg files allowed')
         sys.exit(1)
 
