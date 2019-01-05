@@ -82,7 +82,7 @@ if __name__ == '__main__':
 
     m = get_day_progress(day)
     if not m:
-        print('Something went wrong parsing LOG file')
+        print('Something went wrong parsing LOG file')##?
         sys.exit(1)
 
     tweet = create_tweet(m)
