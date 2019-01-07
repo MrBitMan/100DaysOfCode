@@ -36,7 +36,7 @@ def get_day_progress(html):
 
 
 def create_tweet(m):
-    ht1, ht2 = '#100DaysOfCode', '#Python'
+    ht1, ht2 = '#Test', '#Python'
     title = m['title']
     day = m['day']
     url = REPO_URL + day
@@ -82,3 +82,4 @@ if __name__ == '__main__':
         logging.info('Test: tweet to send: {}'.format(tweet))
     else:
         tweet_status(tweet)
+create_tweet("test")
