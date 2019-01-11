@@ -10,8 +10,8 @@ from email.mime.text import MIMEText
 from email_list import EMAILS
 
 DATA_FILE = 'data.txt'
-from_addr = 'your_email@gmail.com'
-to_addr = 'some_recipient@gmail.com'
+from_addr = ''
+to_addr = ''
 bcc = EMAILS
 
 msg = MIMEMultipart()
@@ -24,14 +24,14 @@ with open(DATA_FILE) as f:
 
 msg.attach(MIMEText(body, 'plain'))
 
-smtp_server = smtplib.SMTP('smtp.gmail.com', 587) #Specify Gmail Mail server
+smtp_server = smtplib.SMTP('smtp.mail.com', 25) #Specify Gmail Mail server
 
 smtp_server.ehlo() #Send mandatory 'hello' message to SMTP server
 
 smtp_server.starttls() #Start TLS Encryption as we're not using SSL.
 
 #Login to gmail: Account | Password
-smtp_server.login(' your_email@gmail.com ', ' GMAIL APPLICATION ID ')
+smtp_server.login('', '')
 
 text = msg.as_string()
 
