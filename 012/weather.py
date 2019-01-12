@@ -4,11 +4,11 @@ import os
 import pytz
 import requests
 
-API_KEY = os.environ.get('WEATHER_API')
+API_KEY = "399a7c12617045b189047fdcdf792b8e"
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather?q='
 
 TIMEZONES = {
-    'Sydney': 'Australia/Sydney',
+    'Istanbul': 'Europe/Istanbul',
     'Alicante': 'Europe/Madrid',
 }
 
