@@ -29,6 +29,7 @@ def get_local_time(utstamp, country, city):
     return dt.strftime(TIME_FMT)
 
 
+
 def query_api(city):
     try:
         data = requests.get(API_URL.format(city, API_KEY)).json()
