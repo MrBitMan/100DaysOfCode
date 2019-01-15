@@ -42,3 +42,4 @@ if __name__ == '__main__':
 
     fmt = 'Total number of posts on {}: {}'
     print(fmt.format(SITE, total))
+##
