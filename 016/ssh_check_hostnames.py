@@ -24,3 +24,5 @@ gen = check_hostname(host_list)
 for i in host_list:
     print(next(gen))
     print('Hit Enter to try the next host.'); input()
+
+##
